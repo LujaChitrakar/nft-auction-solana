@@ -19,7 +19,9 @@ pub struct CreateAuction<'info> {
     )]
     pub auction: Account<'info, Auction>,
 
-    ///CHECK: ONLY HOLDS SOL
+
+    
+    ///CHECK: ONLY HOLDS SOL too
     #[account
     (
         init,
@@ -47,9 +49,9 @@ pub struct CreateAuction<'info> {
 
     pub nft_mint: Account<'info, Mint>,
 
-    pub token_program: Program<'info, Token>,
-
     pub rent: Sysvar<'info, Rent>,
+    
+    pub token_program: Program<'info, Token>,
 
     pub associated_token_program: Program<'info, AssociatedToken>,
 

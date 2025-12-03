@@ -1,0 +1,27 @@
+
+action "auction_auction_ended" "svm::deploy_subgraph" {
+    program_id = action.deploy_auction.program_id
+    program_idl = action.deploy_auction.program_idl
+    block_height = 0 // action.deploy_auction.block_height
+    event {
+        name = "AuctionEnded"
+    }
+}
+
+action "auction_auction_started" "svm::deploy_subgraph" {
+    program_id = action.deploy_auction.program_id
+    program_idl = action.deploy_auction.program_idl
+    block_height = 0 // action.deploy_auction.block_height
+    event {
+        name = "AuctionStarted"
+    }
+}
+
+action "auction_bid_placed" "svm::deploy_subgraph" {
+    program_id = action.deploy_auction.program_id
+    program_idl = action.deploy_auction.program_idl
+    block_height = 0 // action.deploy_auction.block_height
+    event {
+        name = "BidPlaced"
+    }
+}

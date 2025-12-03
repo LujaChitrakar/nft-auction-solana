@@ -61,6 +61,12 @@ pub mod auction {
         Ok(())
     }
 
+
+
+
+
+
+    
     pub fn create_bid(ctx: Context<CreateBid>, bid_amount: u64) -> Result<()> {
         let auction = &mut ctx.accounts.auction;
         let highest_bid = auction.highest_bid;
